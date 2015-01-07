@@ -1,0 +1,78 @@
+@import url(normalize.css);
+
+@import url(http://fonts.googleapis.com/css?family=Courgette);
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  font-weight: 300;
+}
+
+html,
+body {
+  float: left;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #cf4646;
+  font-family: "helvetica", sans-serif;
+}
+
+h1 {
+  font-family: "Courgette", sans-serif;
+  text-align: center;
+  color: #fff;
+  line-height: 100%;
+  font-size: 62px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 20%;
+}
+
+h1 span.word {
+  letter-spacing: 3px;
+}
+
+.img {
+  display: block;
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 60%;
+}
+
+.img img {
+  display: block;
+  width: 40%;
+  margin: 10% auto;
+}
+
+small {
+  position: absolute;
+  bottom: 1em;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: .5em;
+}
+
+small a {
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+  text-decoration: none;
+}

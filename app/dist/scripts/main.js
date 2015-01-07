@@ -1,0 +1,1 @@
+$(document).ready(function(){var a=["Wolrd","Developers","Ponies","Designers","Gitches","Goodbye","...","Guys","Dude","Wizard","Lurkers","C'est B20","ooooooo","Gulp.jso"],b=a.length,c=Math.floor(Math.random()*b);$("span.word").empty().append(a[c])}());
