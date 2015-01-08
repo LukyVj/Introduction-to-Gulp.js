@@ -82,7 +82,7 @@ gulp.task('watch', ['connect', 'serve'], function () {
     gulp.watch([
         'app/*.html',
         'app/scripts/**/*.js',
-        'app/styles/**/*.css',
+        'app/styles/**/*.scss',
         'app/dist/styles/**/*.css',
         'app/images/**/*'
         ]).on('change', function (file) {
@@ -91,7 +91,8 @@ gulp.task('watch', ['connect', 'serve'], function () {
     
 
     // Watch the final css file, to reload the page if changed.
-    gulp.watch('app/dist/styles/**/*.css');
+    gulp.watch('app/styles/**/*.scss', ['styles']);
+    gulp.watch('app/styles/**/*.css', ['uncss']);
 });
 
 // Infos tasks
